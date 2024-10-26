@@ -29,9 +29,9 @@ PACT_VERIFIER_LIB_PACTFFI_VERSIONS = {
 }
 
 CONSTRAINTS = {
-    "darwin_arm64": ["@platforms//os:macos", "@platforms//cpu:arm64"],
+    "darwin_arm64": ["@platforms//os:macos", "@platforms//cpu:aarch64"],
     "darwin_amd64": ["@platforms//os:macos", "@platforms//cpu:x86_64"],
-    "linux_arm64": ["@platforms//os:linux", "@platforms//cpu:arm64"],
+    "linux_arm64": ["@platforms//os:linux", "@platforms//cpu:aarch64"],
     "linux_amd64": ["@platforms//os:linux", "@platforms//cpu:x86_64"],
 }
 
