@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "785fdb275bba354c32c8e553909478f3581f50d477ab894eaead2589763c9af1",
+  "moduleFileHash": "3b04ad2a359faa0bf546356543396d92e36a5edcc26c77aaf373ff49636627d1",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -44,12 +44,12 @@
             "pact_ffi_archive_darwin_amd64": "pact_ffi_archive_darwin_amd64",
             "pact_ffi_archive_linux_amd64": "pact_ffi_archive_linux_amd64",
             "pact_ffi_archive_darwin_arm64": "pact_ffi_archive_darwin_arm64",
-            "pact_protobuf_plugin_osx_x86_64_toolchain": "pact_protobuf_plugin_osx_x86_64_toolchain",
+            "pact_protobuf_plugin_macos_x86_64_toolchain": "pact_protobuf_plugin_macos_x86_64_toolchain",
             "pact_protobuf_plugin_linux_x86_64_toolchain": "pact_protobuf_plugin_linux_x86_64_toolchain",
-            "pact_protobuf_plugin_osx_aarch64_toolchain": "pact_protobuf_plugin_osx_aarch64_toolchain",
-            "pact_reference_osx_x86_64_toolchain": "pact_reference_osx_x86_64_toolchain",
+            "pact_protobuf_plugin_macos_aarch64_toolchain": "pact_protobuf_plugin_macos_aarch64_toolchain",
+            "pact_reference_macos_x86_64_toolchain": "pact_reference_macos_x86_64_toolchain",
             "pact_reference_linux_x86_64_toolchain": "pact_reference_linux_x86_64_toolchain",
-            "pact_reference_osx_aarch64_toolchain": "pact_reference_osx_aarch64_toolchain"
+            "pact_reference_macos_aarch64_toolchain": "pact_reference_macos_aarch64_toolchain"
           },
           "devImports": [],
           "tags": [
@@ -1132,33 +1132,18 @@
   "moduleExtensions": {
     "//:extensions.bzl%rules_pact": {
       "general": {
-        "bzlTransitiveDigest": "DOaLHg9bdvzRjKXMvu5oYtZtxM30Wr2g45vVcKM8aT4=",
+        "bzlTransitiveDigest": "fAvAVSz14N9tBxVj4imS0ePztM4BNZ7wMc8+yxVpDAc=",
         "recordedFileInputs": {},
         "recordedDirentsInputs": {},
         "envVariables": {},
         "generatedRepoSpecs": {
-          "pact_protobuf_plugin_osx_aarch64_toolchain": {
-            "bzlFile": "@@//private/repositories:pact_protobuf_plugin.bzl",
-            "ruleClassName": "pact_plugins_toolchain_repository",
-            "attributes": {
-              "platform": "darwin_arm64",
-              "exec_compatible_with": [
-                "@platforms//os:macos",
-                "@platforms//cpu:arm64"
-              ],
-              "target_compatible_with": [
-                "@platforms//os:macos",
-                "@platforms//cpu:arm64"
-              ]
-            }
-          },
           "pact_protobuf_plugin_archive_darwin_amd64": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "e3b09357c4ca793b7f0d78716ffe18916a7e72ed346ca549dfed79a4ff85cfc3",
+              "sha256": "b07b5f76784cdc2bb9818ae994318538b6a6794b59d0c2ab6c437a28af063e4a",
               "urls": [
-                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.3.5/pact-protobuf-plugin-osx-x86_64.gz"
+                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.5.2/pact-protobuf-plugin-macos-x86_64.gz"
               ]
             }
           },
@@ -1197,40 +1182,24 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "c033dbf7054d1fec7ba4ec8ac4b3de96dbdaad419dea5031375b4b97efcee631",
+              "sha256": "f1329fa64b82492c5714f3644e2a2b45bee1f1baebe9bef3d6658d1a0ac6c290",
               "urls": [
-                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.3.5/pact-protobuf-plugin-osx-aarch64.gz"
+                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.5.2/pact-protobuf-plugin-macos-aarch64.gz"
               ]
             }
           },
-          "pact_reference_osx_x86_64_toolchain": {
-            "bzlFile": "@@//private/repositories:pact_reference.bzl",
-            "ruleClassName": "pact_reference_toolchain_repository",
-            "attributes": {
-              "ext": "dylib",
-              "platform": "darwin_amd64",
-              "exec_compatible_with": [
-                "@platforms//os:macos",
-                "@platforms//cpu:x86_64"
-              ],
-              "target_compatible_with": [
-                "@platforms//os:macos",
-                "@platforms//cpu:x86_64"
-              ]
-            }
-          },
-          "pact_protobuf_plugin_osx_x86_64_toolchain": {
+          "pact_protobuf_plugin_macos_aarch64_toolchain": {
             "bzlFile": "@@//private/repositories:pact_protobuf_plugin.bzl",
             "ruleClassName": "pact_plugins_toolchain_repository",
             "attributes": {
-              "platform": "darwin_amd64",
+              "platform": "darwin_arm64",
               "exec_compatible_with": [
                 "@platforms//os:macos",
-                "@platforms//cpu:x86_64"
+                "@platforms//cpu:arm64"
               ],
               "target_compatible_with": [
                 "@platforms//os:macos",
-                "@platforms//cpu:x86_64"
+                "@platforms//cpu:arm64"
               ]
             }
           },
@@ -1238,13 +1207,13 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "86d8b82ab0843909642bec8f3a1bea702bbe65f3665de18f024fdfdf62b8cf0c",
+              "sha256": "0769b1a4e4bc28672a786e29b68afa855b22b6e2519bba43ef544afd30332378",
               "urls": [
-                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.9/libpact_ffi-linux-x86_64.so.gz"
+                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.23/libpact_ffi-linux-x86_64.so.gz"
               ]
             }
           },
-          "pact_reference_osx_aarch64_toolchain": {
+          "pact_reference_macos_aarch64_toolchain": {
             "bzlFile": "@@//private/repositories:pact_reference.bzl",
             "ruleClassName": "pact_reference_toolchain_repository",
             "attributes": {
@@ -1260,13 +1229,38 @@
               ]
             }
           },
+          "pact_ffi_archive_linux_arm64": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "6e461007f96159e229fab0134c530ef7dd0b9ac28aa14e64b8cd8de7d793f74a",
+              "urls": [
+                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.23/libpact_ffi-linux-aarch64.so.gz"
+              ]
+            }
+          },
           "pact_ffi_archive_darwin_arm64": {
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "7ceb3b823b79d77d3aba2db93aadf41d5d953f8cc888fa8345967167bd41bbc6",
+              "sha256": "c33e146735b7aa2eadab114aa01680fb60a7ff63fcd3194b24e89f1d851840ca",
               "urls": [
-                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.9/libpact_ffi-osx-aarch64-apple-darwin.dylib.gz"
+                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.23/libpact_ffi-macos-aarch64.dylib.gz"
+              ]
+            }
+          },
+          "pact_protobuf_plugin_macos_x86_64_toolchain": {
+            "bzlFile": "@@//private/repositories:pact_protobuf_plugin.bzl",
+            "ruleClassName": "pact_plugins_toolchain_repository",
+            "attributes": {
+              "platform": "darwin_amd64",
+              "exec_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:x86_64"
+              ],
+              "target_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:x86_64"
               ]
             }
           },
@@ -1274,9 +1268,35 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "57c8ae7c95f46e4a48d3d6a251853dd5dd58917e866266ced665fc48a3fdecdd",
+              "sha256": "3b5f3a781e6658a9a5c2ae37bfe187a052a4b2414281ac8c18f69e89f094b116",
               "urls": [
-                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.0.1/pact_verifier_cli-linux-x86_64.gz"
+                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.1.4/pact_verifier_cli-linux-x86_64.gz"
+              ]
+            }
+          },
+          "pact_verifier_cli_archive_linux_arm64": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "e63cb3c4e89972dc00e87fcc29fb0c7e305760084d8ccc3859753c7d17422eb1",
+              "urls": [
+                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.1.4/pact_verifier_cli-linux-aarch64.gz"
+              ]
+            }
+          },
+          "pact_reference_macos_x86_64_toolchain": {
+            "bzlFile": "@@//private/repositories:pact_reference.bzl",
+            "ruleClassName": "pact_reference_toolchain_repository",
+            "attributes": {
+              "ext": "dylib",
+              "platform": "darwin_amd64",
+              "exec_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:x86_64"
+              ],
+              "target_compatible_with": [
+                "@platforms//os:macos",
+                "@platforms//cpu:x86_64"
               ]
             }
           },
@@ -1284,9 +1304,19 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "b8c87e2cc2f83ae9e79678d3288f2f9f7cea27d023576f565d8a203441600a59",
+              "sha256": "b22126e0720eba9ea12c00357ee0c4c5a6d117d140e931333697a6c7ba218e7b",
               "urls": [
-                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.9/libpact_ffi-osx-x86_64.dylib.gz"
+                "https://github.com/pact-foundation/pact-reference/releases/download/libpact_ffi-v0.4.23/libpact_ffi-macos-x86_64.dylib.gz"
+              ]
+            }
+          },
+          "pact_protobuf_plugin_archive_linux_arm64": {
+            "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
+            "ruleClassName": "http_file",
+            "attributes": {
+              "sha256": "276e84c51adfee44d47d21ed41a7bd4380f352119cdbdc4e8b1d3333f64e8b2a",
+              "urls": [
+                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.5.2/pact-protobuf-plugin-linux-aarch64.gz"
               ]
             }
           },
@@ -1294,9 +1324,24 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "16f8b8ca16c12664a877c67a7a4867846eeb2c07670c61758fad52dc4c8baae8",
+              "sha256": "5136b791422990e32a2efa49a29d0ef67af294e08f3a9fe479236d5cd98e8f55",
               "urls": [
-                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.0.1/pact_verifier_cli-osx-aarch64.gz"
+                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.1.4/pact_verifier_cli-macos-aarch64.gz"
+              ]
+            }
+          },
+          "pact_protobuf_plugin_linux_aarch64_toolchain": {
+            "bzlFile": "@@//private/repositories:pact_protobuf_plugin.bzl",
+            "ruleClassName": "pact_plugins_toolchain_repository",
+            "attributes": {
+              "platform": "linux_arm64",
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:arm64"
+              ],
+              "target_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:arm64"
               ]
             }
           },
@@ -1304,9 +1349,9 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "77ffc38f4564cfef42f64b9eb33bebfc4d787e65ef7ff7213640a3d63d2cf5a7",
+              "sha256": "b2b5444e921a30f42a37e491cd9b0b123c4b17e4e886dfd901ad66b5c1149d7f",
               "urls": [
-                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.0.1/pact_verifier_cli-osx-x86_64.gz"
+                "https://github.com/pact-foundation/pact-reference/releases/download/pact_verifier_cli-v1.1.4/pact_verifier_cli-macos-x86_64.gz"
               ]
             }
           },
@@ -1314,9 +1359,9 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "9a0058f10e2eae9375c019453491897ac3eb87bb87b017c311d5d1ec3a4eb979",
+              "sha256": "b85dae43088fca4b4431706c5cc0e1317aee1c6e7a62b65ee6464297d0949e24",
               "urls": [
-                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.3.5/pact-protobuf-plugin-linux-x86_64.gz"
+                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.5.2/pact-protobuf-plugin-linux-x86_64.gz"
               ]
             }
           },
@@ -1324,9 +1369,25 @@
             "bzlFile": "@@bazel_tools//tools/build_defs/repo:http.bzl",
             "ruleClassName": "http_file",
             "attributes": {
-              "sha256": "70fa091ec6728d0077470d7ab1125be02b9b8211b73a552ea37f14e0276b7a52",
+              "sha256": "d649daf99e9adf81dc64a9a28580ad7636634d0d93c8cc3910437d7cf3b5063a",
               "urls": [
-                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.3.5/pact-plugin.json"
+                "https://github.com/pactflow/pact-protobuf-plugin/releases/download/v-0.5.2/pact-plugin.json"
+              ]
+            }
+          },
+          "pact_reference_linux_aarch64_toolchain": {
+            "bzlFile": "@@//private/repositories:pact_reference.bzl",
+            "ruleClassName": "pact_reference_toolchain_repository",
+            "attributes": {
+              "ext": "so",
+              "platform": "linux_arm64",
+              "exec_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:arm64"
+              ],
+              "target_compatible_with": [
+                "@platforms//os:linux",
+                "@platforms//cpu:arm64"
               ]
             }
           }

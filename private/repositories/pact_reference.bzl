@@ -38,8 +38,8 @@ toolchain(
 _PACT_WORKSPACE_CONTENT = """\
 workspace(name = {})
 """
-DEFAULT_PACT_VERIFIER_CLI_VERSION = "1.0.1"
-DEFAULT_PACTFFI_LIB_VERSION = "0.4.9"
+DEFAULT_PACT_VERIFIER_CLI_VERSION = "1.1.4"
+DEFAULT_PACTFFI_LIB_VERSION = "0.4.23"
 def repos(pact_verifier_cli_version = DEFAULT_PACT_VERIFIER_CLI_VERSION, pactffi_lib_version = DEFAULT_PACTFFI_LIB_VERSION):
 
     for platform in PACT_VERIFIER_CLI_VERSIONS[pact_verifier_cli_version].keys():

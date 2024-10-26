@@ -9,7 +9,7 @@ toolchain_type(
 alias(
     name = "pact_ffi",
     actual = select({
-        "osx_arm64": "@pact_reference_osx_aarch64_toolchain//:pact_ffi_darwin_arm64",
+        "osx_arm64": "@pact_reference_macos_aarch64_toolchain//:pact_ffi_darwin_arm64",
         ":macos": "@pact_reference_osx_x86_64_toolchain//:pact_ffi_darwin_amd64",
         ":linux": "@pact_reference_linux_x86_64_toolchain//:pact_ffi_linux_amd64",
     }),

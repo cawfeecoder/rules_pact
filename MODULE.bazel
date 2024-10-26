@@ -22,10 +22,10 @@ use_repo(
     "pact_ffi_archive_darwin_amd64",
     "pact_ffi_archive_linux_amd64",
     "pact_ffi_archive_darwin_arm64",
-    "pact_protobuf_plugin_osx_x86_64_toolchain",
+    "pact_protobuf_plugin_macos_x86_64_toolchain",
     "pact_protobuf_plugin_linux_x86_64_toolchain",
-    "pact_protobuf_plugin_osx_aarch64_toolchain",
-    "pact_reference_osx_x86_64_toolchain",
+    "pact_protobuf_plugin_macos_aarch64_toolchain",
+    "pact_reference_macos_x86_64_toolchain",
     "pact_reference_linux_x86_64_toolchain",
-    "pact_reference_osx_aarch64_toolchain"
+    "pact_reference_macos_aarch64_toolchain"
 )
