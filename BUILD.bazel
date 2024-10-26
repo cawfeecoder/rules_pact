@@ -20,7 +20,7 @@ alias(
 config_setting(
     name = "osx_arm64",
     constraint_values = [
-        "@platforms//os:osx",
+        "@platforms//os:macos",
         "@platforms//cpu:arm64",
     ],
 )
