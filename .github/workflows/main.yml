@@ -57,7 +57,7 @@ jobs:
           curl \
             -L \
             -o $RELEASE_NAME-v$NEXT_RELEASE_VERSION.tar.gz \
-            https://github.com/opicaud/$RELEASE_NAME/archive/refs/tags/v$NEXT_RELEASE_VERSION.tar.gz
+            https://github.com/stitchmate/$RELEASE_NAME/archive/refs/tags/v$NEXT_RELEASE_VERSION.tar.gz
           ls
       - name: Create release
         if: steps.semantic.outputs.new_release_published == 'true'
