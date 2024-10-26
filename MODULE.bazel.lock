@@ -1,6 +1,6 @@
 {
   "lockFileVersion": 6,
-  "moduleFileHash": "3b04ad2a359faa0bf546356543396d92e36a5edcc26c77aaf373ff49636627d1",
+  "moduleFileHash": "73742d7b1b362e76f7218946767b26d80f4fae94f9843d5cda7eeaaa59ec37a5",
   "flags": {
     "cmdRegistries": [
       "https://bcr.bazel.build/"
@@ -36,18 +36,23 @@
           "imports": {
             "pact_protobuf_plugin_archive_darwin_amd64": "pact_protobuf_plugin_archive_darwin_amd64",
             "pact_protobuf_plugin_archive_linux_amd64": "pact_protobuf_plugin_archive_linux_amd64",
+            "pact_protobuf_plugin_archive_linux_arm64": "pact_protobuf_plugin_archive_linux_arm64",
             "pact_protobuf_plugin_archive_darwin_arm64": "pact_protobuf_plugin_archive_darwin_arm64",
             "pact_plugin_json_archive": "pact_plugin_json_archive",
             "pact_verifier_cli_archive_darwin_amd64": "pact_verifier_cli_archive_darwin_amd64",
             "pact_verifier_cli_archive_darwin_arm64": "pact_verifier_cli_archive_darwin_arm64",
             "pact_verifier_cli_archive_linux_amd64": "pact_verifier_cli_archive_linux_amd64",
+            "pact_verifier_cli_archive_linux_arm64": "pact_verifier_cli_archive_linux_arm64",
             "pact_ffi_archive_darwin_amd64": "pact_ffi_archive_darwin_amd64",
             "pact_ffi_archive_linux_amd64": "pact_ffi_archive_linux_amd64",
+            "pact_ffi_archive_linux_arm64": "pact_ffi_archive_linux_arm64",
             "pact_ffi_archive_darwin_arm64": "pact_ffi_archive_darwin_arm64",
             "pact_protobuf_plugin_macos_x86_64_toolchain": "pact_protobuf_plugin_macos_x86_64_toolchain",
+            "pact_protobuf_plugin_linux_aarch64_toolchain": "pact_protobuf_plugin_linux_aarch64_toolchain",
             "pact_protobuf_plugin_linux_x86_64_toolchain": "pact_protobuf_plugin_linux_x86_64_toolchain",
             "pact_protobuf_plugin_macos_aarch64_toolchain": "pact_protobuf_plugin_macos_aarch64_toolchain",
             "pact_reference_macos_x86_64_toolchain": "pact_reference_macos_x86_64_toolchain",
+            "pact_reference_linux_aarch64_toolchain": "pact_reference_linux_aarch64_toolchain",
             "pact_reference_linux_x86_64_toolchain": "pact_reference_linux_x86_64_toolchain",
             "pact_reference_macos_aarch64_toolchain": "pact_reference_macos_aarch64_toolchain"
           },
